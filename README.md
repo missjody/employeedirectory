@@ -10,7 +10,11 @@
 * updated files in src to display more like what we've been 
   doing in class
   
-* installed axios
+* installed axios -- but also installed faker as an npm so not
+  certain that I will need to also make an api call
+
+* installed react-router-dom and styled-components from SC's 4   
+  hour code through
 
 ## Overview
 
