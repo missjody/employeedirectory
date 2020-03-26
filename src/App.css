@@ -1,3 +1,12 @@
+/* we need css for nav links to render pretty */
+/* can just put styling here rather than having different 
+styling for each page */
+h2 {
+  color: #FD9564;
+
+}
+
+/* from original react set up */
 /* .App {
   text-align: center;
 }
