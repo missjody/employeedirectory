@@ -14,9 +14,12 @@ function App() {
     <Router>
       <>
         {/* NavTabs will always be loaded */}
+        {/* Home has to always be loaded as well 
+        otherwise it doesn't load on first open
+        of the site */}
         <NavTabs />
-        {/* These will be rendered conditionally */}
-        <Route exact path="/" component={Home} />
+        <Home />
+        {/* This will be rendered conditionally */}
         <Route exact path="/Directory" component={Directory} />
       </>
     </Router>
