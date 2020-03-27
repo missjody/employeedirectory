@@ -1,20 +1,8 @@
 # Unit 19 React Homework: Employee Directory
 
-* installed faker
-  * var faker = require('faker');
-    var randomName = faker.name.findName();
-    var randomEmail = faker.internet.email();
-    var randomCard = faker.helpers.createCard();
-    https://github.com/marak/Faker.js/
-
-* updated files in src to display more like what we've been 
-  doing in class
+* installing the suggested faker is not going to work. Found an api that will generate several individuals at once rather than on per refresh. 
   
-* installed axios -- but also installed faker as an npm so not
-  certain that I will need to also make an api call
-
-* installed react-router-dom and styled-components from SC's 4   
-  hour code through
+* installed axios /
 
 ## Overview
 

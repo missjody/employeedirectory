@@ -1,30 +1,25 @@
-// possible option from activities 19 and 20 and review
 import React from "react";
-import Faker from "faker";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
-// import NavTabs from "./components/NavTabs";
-// import Home from "./components/pages/Home";
+// import { BrowserRouter as Router, Route } from "react-router-dom"; // Are we going to need these at all?
 import Directory from "./components/pages/Directory";
-import EmployeeCard from "./components/EmployeCard";
+import './App.css';
 
-import './App.css'; // is this needed here? 
+// set up app as a class based component
+// that that we can use state in the application
+class App extends React.Component {
+  render() {
 
-function App() {
-
-  return (
-    <div>
-      <Directory />
-      <EmployeeCard
-
-        name={Faker.name.findName()}
-        email={Faker.internet.email()}
-        avatar={Faker.internet.avatar()}
-        title={Faker.name.jobTitle()}
-        phone={Faker.phone.phoneNumber()}
-
-      />
-    </div>
-  )
+    return (
+      <div>
+        <Directory
+        //     name={value.name}
+        //     email={value.name}
+        //     avatar={value.name}
+        //     title={value.name}
+        //     phone={value.name}
+        />
+      </div>
+    )
+  }
 }
 
 export default App;
