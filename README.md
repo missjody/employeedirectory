@@ -1,8 +1,9 @@
 # Unit 19 React Homework: Employee Directory
 
-* installing the suggested faker is not going to work. Found an api that will generate several individuals at once rather than on per refresh. 
-  
-* installed axios /
+* Style page to have a how to, a search bar, and search functionality
+* Style each employee's cards
+* Make the employees pulled static rather than updating with every refresh
+* Pull in additional information about the employees
 
 ## Overview
 
