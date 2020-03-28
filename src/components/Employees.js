@@ -1,4 +1,6 @@
 import React from "react";
+// import Table from "react-bootstrap-table";
+// import 'node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 // import './App.css';
 
 //design how each employee's card will look like
@@ -6,39 +8,19 @@ import React from "react";
 const Employees = (props) => {
 
   return (
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.firstName} src={props.icon} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.firstName} {props.lastName}
-          </li>
-          <li>
-            <strong>Email:</strong> {props.email}
-          </li>
-        </ul>
-      </div>
-    </div>
+
+
+    <tr>
+      <td><img alt={props.firstName} src={props.icon} /></td>
+      <td><strong>Name:</strong> {props.firstName} {props.lastName}</td>
+      <td><strong>Email:</strong> {props.email}</td>
+      <td><strong>Phone:</strong> {props.phone} </td>
+    </tr>
+
+
+
+
   );
-
-  // return what goes in the card here
-  // return (
-
-
-  // //   <div>
-
-  // //     <img alt={props.name} src={props.avatar} />
-  // //     <h1> test employee card</h1>
-  // //     <p> Name: {props.name} </p>
-  // //     <p> Email: {props.email}</p>
-  // //     <p> phone: {props.phone} </p>
-  // //     <p> title: {props.title} </p>
-
-
-  // //   </div>
-  // )
 }
 
 export default Employees;

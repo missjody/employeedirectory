@@ -10,13 +10,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Directory
-        //     name={value.name}
-        //     email={value.name}
-        //     avatar={value.name}
-        //     title={value.name}
-        //     phone={value.name}
-        />
+        <Directory />
       </div>
     )
   }

@@ -1,5 +1,7 @@
 import React from "react";
 import Employees from "./Employees.js";
+// import Table from "react-bootstrap-table";
+// import 'node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 class EmployeeCard extends React.Component {
   state = {
@@ -21,17 +23,33 @@ class EmployeeCard extends React.Component {
     return (
       <div>
         <div> Test </div>
-        {this.state.employees.map(employee => {
-          return (
-            <Employees
-              firstName={employee.name.first}
-              lastName={employee.name.last}
-              email={employee.email}
-              icon={employee.picture.thumbnail}
-            />
-          )
-        })}
+        <table>
+          <thead>
+            <tr>
+              <th>Headshot</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.employees.map(employee => {
+              return (
 
+
+                <Employees
+                  key={employee.id.value}
+                  firstName={employee.name.first}
+                  lastName={employee.name.last}
+                  phone={employee.phone}
+                  email={employee.email}
+                  icon={employee.picture.thumbnail}
+                />
+
+              )
+            })}
+          </tbody>
+        </table>
       </div>
     );
   }

@@ -1,9 +1,11 @@
 # Unit 19 React Homework: Employee Directory
 
 * Style page to have a how to, a search bar, and search functionality
-* Style each employee's cards
 * Make the employees pulled static rather than updating with every refresh
-* Pull in additional information about the employees
+
+* Style each employee's cards
+  * Found pretty tables in documentation, installed npm install react-bootstrap-table --save
+  * could not get it to work like I wanted it to, put on back burner
 
 ## Overview
 
