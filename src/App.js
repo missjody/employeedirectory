@@ -1,6 +1,7 @@
 import React from "react";
 // import { BrowserRouter as Router, Route } from "react-router-dom"; // Are we going to need these at all?
 import Directory from "./components/pages/Directory";
+import EmployeeCard from "./components/EmployeeCard.js"
 import './App.css';
 
 // set up app as a class based component
@@ -11,6 +12,8 @@ class App extends React.Component {
     return (
       <div>
         <Directory />
+        {/* Box to contain search */}
+        <EmployeeCard />
       </div>
     )
   }

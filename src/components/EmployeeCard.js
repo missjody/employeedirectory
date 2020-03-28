@@ -21,7 +21,7 @@ class EmployeeCard extends React.Component {
   // map over data to generate a card for each employee  
   render() {
     return (
-      <div>
+      <div className="container">
         <div> Test </div>
         <table>
           <thead>
@@ -43,7 +43,7 @@ class EmployeeCard extends React.Component {
                   lastName={employee.name.last}
                   phone={employee.phone}
                   email={employee.email}
-                  icon={employee.picture.thumbnail}
+                  icon={employee.picture.medium}
                 />
 
               )

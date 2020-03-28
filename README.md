@@ -1,11 +1,31 @@
 # Unit 19 React Homework: Employee Directory
 
+## Still to do
+
 * Style page to have a how to, a search bar, and search functionality
-* Make the employees pulled static rather than updating with every refresh
+  * Going through forms from last Saturdays class
+  * Sort by one catagory
+  * Filter by one catagory
+
+* Make the employees pulled static rather than updating with every refresh?
+
+* Color theme for reference with where I want to put it
+  #1C2743 Dark Blue : App.js bkg, Search and Employees font
+  #213862 Med Blue : Directory font
+  #B46382 Mauve : Employees bkg
+  #FD9564 Peach : Search bkg
+  #E3463F Tangerine : Employee Card bkg
 
 * Style each employee's cards
-  * Found pretty tables in documentation, installed npm install react-bootstrap-table --save
-  * could not get it to work like I wanted it to, put on back burner
+  * Ended up remembering that there's such a thing as TABLES god
+  * Still want to style them more pretty
+  * Add DOB!
+
+* Pick out a font: 
+  * for Hs https://fonts.google.com/specimen/Timmana
+  * for normal https://fonts.google.com/specimen/Assistant
+
+
 
 ## Overview
 
