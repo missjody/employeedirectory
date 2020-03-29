@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Employees from "./Employees.js";
 import Search from "./Search.js";
-// import EmployeeCard from "./EmployeeCard.js"
 import "../styles/Directory.css";
 
 class Directory extends Component {
@@ -13,8 +12,8 @@ class Directory extends Component {
     sorted: false,
   };
 
-  // // check that the component rendered at least once, and pull in our data
-  // // wait for the information to come back
+  // check that the component rendered at least once, and pull in our data
+  // wait for the information to come back
   componentDidMount = () => {
     fetch(`https://randomuser.me/api/?results=25&nat=us&inc=name,email,phone,id,picture,dob`)
       .then(res => res.json())
@@ -23,10 +22,11 @@ class Directory extends Component {
       })
   };
 
+  // sort through employees based on search term
+  // check if there is a match and set that to empSort for rendering
   sortEmp = () => {
     let { employees, search } = this.state;
     let empSort = employees.filter(sorted => {
-      // console.log("sorted ", empSort)
       return (
         sorted.name.first.toLowerCase().includes(search.toLowerCase()) ||
         sorted.name.last.toLowerCase().includes(search.toLowerCase()) ||
@@ -36,6 +36,7 @@ class Directory extends Component {
     this.setState({ empSort })
   }
 
+  // grab search term, activate sorted  
   startSort = event => {
     this.setState({ search: event.target.value }, () => {
       this.sortEmp();
@@ -44,15 +45,17 @@ class Directory extends Component {
   };
 
   render = () => {
-    // console.log("empSort ", this.state.empSort);
+
     return (
+
       <div>
         <div className="jumbotron">
           <h2 className="display-4">
             Employee Directory
           </h2>
-          <p className="lead">
-            Hey team! At Barbara's request in the last all employee meeting, I've set up an easy way to quickly find information about our officemates. Search below by name or email to pull up who you are looking for. Any questions or issues, feel free to reach out!
+          <p >
+            Hey team! At Barbara's request in the last all employee meeting, I've set up an easy way to quickly find information about our officemates.</p>
+          <p > Search below by name or email to pull up who you are looking for. Any questions or issues, feel free to reach out!
           </p>
           <Search
             name="search"
@@ -63,12 +66,12 @@ class Directory extends Component {
 
         <div className="container">
           <table className="table">
-            <thead>
+            <thead className="thead">
               <tr>
                 <th>Headshot  </th>
-                <th>Name  </th>
-                <th>Email  </th>
-                <th>Phone Number  </th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
                 <th>Birthdate  </th>
               </tr>
             </thead>
@@ -85,7 +88,7 @@ class Directory extends Component {
                   phone={employee.phone}
                   email={employee.email}
                   icon={employee.picture.medium}
-                  dob={Date(employee.dob.date)}
+                  dob={employee.dob.date}
 
                 />
 
@@ -100,17 +103,21 @@ class Directory extends Component {
                     phone={employee.phone}
                     email={employee.email}
                     icon={employee.picture.medium}
-                    dob={Date(employee.dob.date)}
+                    dob={employee.dob.date}
                   />
 
                 ))};
           </tbody>
           </table>
+
         </div>
-      </div>
+
+      </div >
 
     )
+
   }
+
 }
 
 export default Directory;
