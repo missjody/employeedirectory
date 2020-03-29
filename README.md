@@ -1,5 +1,28 @@
 # Unit 19 React Homework: Employee Directory
 
+{
+"name": {
+"title": "Ms",
+"first": "Jennie",
+"last": "Stanley"
+},
+"email": "jennie.stanley@example.com",
+"dob": {
+"date": "1959-08-15T08:24:04.418Z",
+"age": 61
+},
+"phone": "(036)-488-7351",
+"id": {
+"name": "SSN",
+"value": "256-01-7359"
+},
+"picture": {
+"large": "https://randomuser.me/api/portraits/women/91.jpg",
+"medium": "https://randomuser.me/api/portraits/med/women/91.jpg",
+"thumbnail": "https://randomuser.me/api/portraits/thumb/women/91.jpg"
+}
+}
+
 ## Still to do
 
 * Style page to have a how to, a search bar, and search functionality
@@ -25,6 +48,8 @@
   * for Hs https://fonts.google.com/specimen/Timmana
   * for normal https://fonts.google.com/specimen/Assistant
 
+* God how do you uninstall all the things you don't end up using? 
+  * npm install mdbreact trying new table
 
 
 ## Overview

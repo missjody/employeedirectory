@@ -1,22 +1,13 @@
 import React from "react";
-// import { BrowserRouter as Router, Route } from "react-router-dom"; // Are we going to need these at all?
-import Directory from "./components/pages/Directory";
-import EmployeeCard from "./components/EmployeeCard.js"
+import Directory from "./components/Directory";
 import './App.css';
 
-// set up app as a class based component
-// that that we can use state in the application
-class App extends React.Component {
-  render() {
-
-    return (
-      <div>
-        <Directory />
-        {/* Box to contain search */}
-        <EmployeeCard />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div className="App">
+      <Directory />
+    </div>
+  )
 }
 
 export default App;
