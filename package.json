@@ -1,15 +1,22 @@
 {
   "homepage": "http://missjody.github.io/employeedirectory",
-  "name": "newemployeedirectory",
+  "name": "employeedirectory",
+  "descripton": "# Unit 19 React Homework: Employee Directory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "faker": "^4.1.0",
+    "mdbreact": "^4.25.4",
+    "moment": "^2.24.0",
     "react": "^16.13.1",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-table": "^7.0.0",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
