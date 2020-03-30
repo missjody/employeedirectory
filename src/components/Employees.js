@@ -21,5 +21,3 @@ const Employees = (props) => {
 }
 
 export default Employees;
-
-
